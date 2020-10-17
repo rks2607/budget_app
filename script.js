@@ -1,3 +1,9 @@
+var date = new Date();
+var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var current_month = month[date.getMonth()];
+month_element = document.querySelector('.budget__title--month');
+month_element.textContent = current_month;
+
 var budgetController = (function(){
     var Expense = function(id, description, value){
         this.id= id;
